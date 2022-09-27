@@ -1,0 +1,147 @@
+
+public class Account
+{
+private String accName;
+private String acId;
+private int balance;
+
+public Account ()
+{
+System.out.println ("Empty account")
+}
+public Account (String accName,String acId,int balance)
+{
+System.out.println( "Para Account");
+this.accName= accName;
+this.acId= acId;
+this.balance= balance;
+
+}
+
+public void setaccName(String accName)
+{
+this.accName= accName;
+}
+public void setacId (String acId)
+{
+	this.acId=acId;
+}
+public void setbalance (int balance)
+{
+	this.balance= balance
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int array_1[]={20,40,10,50,30};
+    int array_2[]={1,2,3,4,5,6,7,8};
+    int mergearray[13];
+    int i;
+    
+    for (i=0; i<5; i++)
+    {
+        
+       mergearray[i]=array_1[i];
+    }
+    for (i=0; 1<8; i++)
+    {
+        mergearray[1+5]=array_2[i];
+    }
+    for (i=12; i>=0; i--);
+    {
+        cout<<mergearray[i]<<"";
+    }
+    return o;
+}
+
+#include <iostream>
+using namespace std;
+
+
+
+int removeDuplicates(int arr[], int n)
+{
+    if (n == 0||n ==1)
+        return n;
+
+
+
+   int temp[n];
+
+
+
+   int j = 0;
+
+
+
+   for (int i = 0; i < n - 1; i++)
+        if (arr[i] != arr[i + 1])
+            temp[j++] = arr[i];
+
+
+
+
+    temp[j++] = arr[n - 1];
+
+
+
+   for (int i = 0; i < j; i++)
+        arr[i] = temp[i];
+
+
+
+   return j;
+}
+
+
+
+int main()
+{
+    int arr[] = { 1,2,2,3,4,4, 4,5,5,6,6 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+
+
+   n = removeDuplicates(arr, n);
+
+
+
+   for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+
+
+
+   return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+    int Array_1 [5]={11,20,30,45,50};
+    int Array_2[8]={1,2,3,4,5,6,7,8};
+    int CommonElements[13];
+	int i, j, n=0;
+
+    for(i=0; i<5; i++)
+    {
+        for(j=0; j<8; j++)
+        {
+            if (Array_1[i] == Array_2[j])
+            {
+                CommonElements[i] = Array_1[i];
+                cout<<CommonElements[i]<<" ";
+                n++;
+            }
+        }
+    }
+    if (n==0)
+    {
+        cout<<"No Common elements!";
+    }
+
+	return 0;
+}
+
